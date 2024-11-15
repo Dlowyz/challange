@@ -1,12 +1,13 @@
 import './ExpenseItem.css';
 
-const ExpenseItem = () => {
+const ExpenseItem = (props) => {
+    console.log(props);
     return(
     <div className='expense-item'>
-        <div>Date</div>
+        <div>{props.data.date.toString()}</div>
         <div className='expense-item-description'>
-            <h2>Title</h2>
-            <div className='expense-item-price'>Price</div>
+            <h2>{props.data.title}</h2>
+            <div className='expense-item-price'>{props.data.price}</div>
         </div>
     </div>
     )
