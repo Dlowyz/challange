@@ -28,6 +28,7 @@ body{
     font-weight: normal;
     font-size: 1.3rem;
     color: white;
+    margin-left: 3%;
 }
 
 .expense-item-price {
