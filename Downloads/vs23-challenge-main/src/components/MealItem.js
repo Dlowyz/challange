@@ -1,5 +1,8 @@
 import Button from "./UI/Button"
+import { CartContext } from "../store/CartContext"
+import { useState } from "react";
 const MealItem = (props) => {
+    
     return (
         <li>
             <article className="meal-item article">
@@ -12,7 +15,10 @@ const MealItem = (props) => {
                     <p className="meal-item-description">{props.meal.description}</p>
                 </div>
                 <p>
-                    <Button textOnly={false}>Add to Cart</Button>
+                    
+                    <Button data={props.meal}  textOnly={false}>Add to Cart</Button>
+                    
+                    
                 </p>
             </article>
         </li>

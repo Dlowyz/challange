@@ -3,12 +3,12 @@ import Meals from './components/Meals';
 import React from 'react';
 
 const App = () => {
- return (
+  return (
     <>
-     <Header />
-     <Meals />   
+      <Header />
+      <Meals />
     </>
   );
-}
+};
 
 export default App;
